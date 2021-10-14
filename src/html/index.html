@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Generator</title>
+</head>
+<body>
+    <div class="MainScreen">
+        <div class="MainScreen-ItemToStyleList ItemToStyleList">
+<p  id="button" class="ItemToStyleList-Item">button</p>
+<p id="image" class="ItemToStyleList-Item ItemToStyleList-Item">image</p>
+<p class="ItemToStyleList-Item">onlyFullVersion</p>
+<p class="ItemToStyleList-Item">onlyFullVersion</p>
+        </div>
+        <div id="buttonCSS"  class="MainScreen-StyleConfigure StyleConfigure">
+            
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">Width</h1>
+                <p id="pxwBind" class="StyleConfigure-Name">width px</p>
+                <input id="pxwTarget" type="number" class="StyleConfigure-Valuepx"></input>
+                <p id="procentwBind" class="StyleConfigure-Name">width %</p>
+
+                <input id="procentwTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="vwBind" class="StyleConfigure-Name">width vw</p>
+
+                <input id="vwTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+            </div>
+
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">height</h1>
+                <p id="pxhBind" class="StyleConfigure-Name">height px</p>
+                <input id="pxhTarget" type="number" class="StyleConfigure-Valuepx"></input>
+                <p id="procenthBind" class="StyleConfigure-Name">height %</p>
+
+                <input id="procenthTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="vhhBind" class="StyleConfigure-Name">height vh</p>
+
+                <input id="vhhTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+            </div>
+
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">box-shadow</h1>
+                
+                <p id="offsxBind" class="StyleConfigure-Name">offset-x</p>
+
+                <input id="offsxTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="offsyBind" class="StyleConfigure-Name">offset-y</p>
+
+                <input id="offsyTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="blurBind" class="StyleConfigure-Name">blur-radius</p>
+
+                <input id="blurTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="spreadBind" class="StyleConfigure-Name"> spread-radius</p>
+
+                <input id="spreadTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="colorBind" class="StyleConfigure-Name"> color</p>
+            
+               <input id="colorTarget" type="color"  name="" id="" class="StyleConfigure-Color">
+
+               <p id="insetBind" class="StyleConfigure-Name"> Inset?</p>
+            
+               <select id="insetTarget"   name=""  class="StyleConfigure-Inset">
+                   <option value=" ">initial</option>
+                   <option value="inset">inset</option>
+
+               </select>
+
+            </div>
+
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">Background</h1>
+                <p id="backcolorBind" class="StyleConfigure-Name"> background-color</p>
+            
+               <input id="backcolorTarget" type="color"  name="" id="" class="StyleConfigure-Color">
+                <p id="imageBind" class="StyleConfigure-Name">background-image</p>
+
+                <input id="imageTarget" type="file"  class="StyleConfigureProcent">
+ 
+             </div>
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">Border-radius</h1>
+                <p id="radiusPxBind" class="StyleConfigure-Name"> Border-radius px</p>
+            
+               <input id="radiusPxTarget" type="number"  name="" id="" class="StyleConfigure-Color">
+                <p id="radiusPrBind" class="StyleConfigure-Name">Border-radius %</p>
+
+                <input id="radiusPrTarget" type="range" value="0"  min="0" max="100" class="StyleConfigureProcent">
+ 
+             </div>
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">InnerText</h1>
+                <p id="textValueBind" class="StyleConfigure-Name"> Text </p>
+            
+               <input id="textValueTarget" type="text"  name="" id="" class="StyleConfigure-Color">
+                <p id="textColorBind" class="StyleConfigure-Name">Text-color </p>
+
+                <input id="textColorTarget" type="color"  class="StyleConfigure-Color">
+ 
+                <p id="textFontBind" class="StyleConfigure-Name">font-size </p>
+
+                <input id="textFontTarget" type="number"  name="" id="" class="StyleConfigure-Color">
+                <p id="textFontStyleBind" class="StyleConfigure-Name">Style-size </p>
+
+                <input id="textFontStyleTarget" type="file"  class="StyleConfigureProcent">
+ 
+             </div>
+
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">:hover</h1>
+                <p id="hoverColorBind" class="StyleConfigure-Name"> Color </p>
+            
+               <input id="hoverColorTarget" type="color"  name="" id="" class="StyleConfigure-Color">
+                
+              
+
+               
+
+             </div>
+
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">:active</h1>
+                <p id="activeColorBind" class="StyleConfigure-Name"> Color </p>
+            
+               <input id="activeColorTarget" type="color"  name="" id="" class="StyleConfigure-Color">
+                
+              
+
+               
+
+             </div>
+
+        </div>
+
+
+        <div id="imageCSS"  class="MainScreen-StyleConfigure StyleConfigure">
+            
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">Width</h1>
+                <p id="pxwImgBind" class="StyleConfigure-Name">width px</p>
+                <input id="pxwImgTarget" type="number" class="StyleConfigure-Valuepx"></input>
+                <p id="procentwImgBind" class="StyleConfigure-Name">width %</p>
+
+                <input id="procentwImgTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="vwImgBind" class="StyleConfigure-Name">width vw</p>
+
+                <input id="vwImgTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+            </div>
+
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">height</h1>
+                <p id="pxhImgBind" class="StyleConfigure-Name">height px</p>
+                <input id="pxhImgTarget" type="text" class="StyleConfigure-Valuepx"></input>
+                <p id="procenthImgBind" class="StyleConfigure-Name">height %</p>
+
+                <input id="procenthImgTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="vhhImgBind" class="StyleConfigure-Name">height vh</p>
+
+                <input id="vhhImgTarget" type="range" value="0" min="0" max="100" name="" id="" class="StyleConfigureProcent">
+            </div>
+
+            <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">box-shadow</h1>
+                
+                <p id="offsxImgBind" class="StyleConfigure-Name">offset-x</p>
+
+                <input id="offsxImgTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="offsyImgBind" class="StyleConfigure-Name">offset-y</p>
+
+                <input id="offsyImgTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="blurImgBind" class="StyleConfigure-Name">blur-radius</p>
+
+                <input id="blurImgTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="spreadImgBind" class="StyleConfigure-Name"> spread-radius</p>
+
+                <input id="spreadImgTarget" type="range" value="0" min="-100" max="100" name="" id="" class="StyleConfigureProcent">
+                <p id="colorImgBind" class="StyleConfigure-Name"> color</p>
+            
+               <input id="colorImgTarget" type="color"  name="" id="" class="StyleConfigure-Color">
+
+               <p id="insetImgBind" class="StyleConfigure-Name"> Inset?</p>
+            
+               <select id="insetImgTarget"   name=""  class="StyleConfigure-Inset">
+                   <option value=" ">initial</option>
+                   <option value="inset">inset</option>
+
+               </select>
+
+            </div>
+
+            
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">Border-radius</h1>
+                <p id="radiusPxImgBind" class="StyleConfigure-Name"> Border-radius px</p>
+            
+               <input id="radiusPxImgTarget" type="number"  name="" id="" class="StyleConfigure-Color">
+                <p id="radiusPrImgBind" class="StyleConfigure-Name">Border-radius %</p>
+
+                <input id="radiusPrImgTarget" type="range" value="0"  min="0" max="100" class="StyleConfigureProcent">
+ 
+             </div>
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">CSS Filter</h1>
+                <p id="sepiaImgBind" class="StyleConfigure-Name"> Sepia </p>
+               <input id="sepiaImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+             
+               <p id="blurFImgBind" class="StyleConfigure-Name"> blur </p>
+
+               <input id="blurFImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+
+               <p id="invertImgBind" class="StyleConfigure-Name"> invert </p>
+
+               <input id="invertImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="brightnessImgBind" class="StyleConfigure-Name"> brightness </p>
+
+               <input id="brightnessImgTarget" type="range" value="100" min="0" max="500"  name=""   class="StyleConfigure-Color">
+
+               <p id="opacityImgBind" class="StyleConfigure-Name"> opacity </p>
+
+               <input id="opacityImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+
+               <p id="hueRotateImgBind" class="StyleConfigure-Name"> hueRotate </p>
+
+               <input id="hueRotateImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="GrayScaleImgBind" class="StyleConfigure-Name"> GrayScale </p>
+
+               <input id="GrayScaleImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="contrastImgBind" class="StyleConfigure-Name"> contrast </p>
+
+               <input id="contrastImgTarget" type="range" value="100" min="100" max="500"  name=""   class="StyleConfigure-Color">
+
+               <p id="saturateImgBind" class="StyleConfigure-Name"> saturate </p>
+
+               <input id="saturateImgTarget" type="range" value="" min="100" max="500"  name=""   class="StyleConfigure-Color">
+
+
+             </div>
+
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">:hover</h1>
+                 <p id="sepiaHoverImgBind" class="StyleConfigure-Name"> Sepia </p>
+               <input id="sepiaHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+             
+               <p id="blurFHoverImgBind" class="StyleConfigure-Name"> blur </p>
+
+               <input id="blurFHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+
+               <p id="invertHoverImgBind" class="StyleConfigure-Name"> invert </p>
+
+               <input id="invertHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="brightnessHoverImgBind" class="StyleConfigure-Name"> brightness </p>
+
+               <input id="brightnessHoverImgTarget" type="range" value="100" min="0" max="500"  name=""   class="StyleConfigure-Color">
+
+               <p id="opacityHoverImgBind" class="StyleConfigure-Name"> opacity </p>
+
+               <input id="opacityHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+
+               <p id="hueRotateHoverImgBind" class="StyleConfigure-Name"> hueRotate </p>
+
+               <input id="hueRotateHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="GrayScaleHoverImgBind" class="StyleConfigure-Name"> GrayScale </p>
+
+               <input id="GrayScaleHoverImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+               <p id="contrastHoverImgBind" class="StyleConfigure-Name"> contrast </p>
+
+               <input id="contrastHoverImgTarget" type="range" value="100" min="100" max="500"  name=""   class="StyleConfigure-Color">
+
+               <p id="saturateHoverImgBind" class="StyleConfigure-Name"> saturate </p>
+
+               <input id="saturateHoverImgTarget" type="range" value="" min="100" max="500"  name=""   class="StyleConfigure-Color">
+
+
+                
+              
+
+               
+
+             </div>
+
+
+             <div class="StyleConfigure-StyleBox">
+                <h1 class="StyleConfigure-HeadName">:active</h1>
+                <p id="sepiaActiveImgBind" class="StyleConfigure-Name"> Sepia </p>
+                <input id="sepiaActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+              
+                <p id="blurFActiveImgBind" class="StyleConfigure-Name"> blur </p>
+ 
+                <input id="blurFActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+ 
+                <p id="invertActiveImgBind" class="StyleConfigure-Name"> invert </p>
+ 
+                <input id="invertActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+                <p id="brightnessActiveImgBind" class="StyleConfigure-Name"> brightness </p>
+ 
+                <input id="brightnessActiveImgTarget" type="range" value="100" min="0" max="500"  name=""   class="StyleConfigure-Color">
+ 
+                <p id="opacityActiveImgBind" class="StyleConfigure-Name"> opacity </p>
+ 
+                <input id="opacityActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+ 
+                <p id="hueRotateActiveImgBind" class="StyleConfigure-Name"> hueRotate </p>
+ 
+                <input id="hueRotateActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+                <p id="GrayScaleActiveImgBind" class="StyleConfigure-Name"> GrayScale </p>
+ 
+                <input id="GrayScaleActiveImgTarget" type="range" value="" min="" max=""  name=""   class="StyleConfigure-Color">
+                <p id="contrastActiveImgBind" class="StyleConfigure-Name"> contrast </p>
+ 
+                <input id="contrastActiveImgTarget" type="range" value="100" min="100" max="500"  name=""   class="StyleConfigure-Color">
+ 
+                <p id="saturateActiveImgBind" class="StyleConfigure-Name"> saturate </p>
+ 
+                <input id="saturateActiveImgTarget" type="range" value="" min="100" max="500"  name=""   class="StyleConfigure-Color">
+ 
+ 
+                 
+                
+              
+
+               
+
+             </div>
+
+            
+
+        </div>
+
+
+ 
+
+
+             
+
+        <div class="MainContent-ResultView ResultView">
+            <div id="getImgCode" class="ResultView-CSSCodeIcon">Get CSS</div>
+            <div id="resetImgCode" class="ResultView-CSSCodeIcon ResultView-CSSCodeIcon__Reset">Reset CSS</div>
+            <div id="getBtnCode" class="ResultView-CSSCodeIcon">Get CSS</div>
+            <div id="resetBtnCode" class="ResultView-CSSCodeIcon ResultView-CSSCodeIcon__Reset">Reset CSS</div>
+<div id="codeResult" class="ResultView-Code"></div>
+            <h1 class="ResultView-ContentName">Добро пожаловать в генератор CSS Эффектов!</h1>
+            <p class="ResultView-Details ResultView-ContentName">Это демо версия , полный функционал и дружелюбный интерфейс доступны в Production Версий !</p>
+            <p class="ResultView-Details">Developed by <a href="#">maslenokVanilaJs</a></p> 
+            <button id="btn" class="ResultView-SelectedItem">Style Me!</button>  
+              <img id="img" src="/src/img/1.jpg" alt="" class="ResultView-SelectedItem ResultView-SelectedItem__Image">
+        </div>
+    </div>
+</body>
+</html>
