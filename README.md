@@ -1,0 +1,2 @@
+# UI-CSS-Generator-Demo
+This project is made for Portfolio, author is looking forward for a job. Function: Generate CSS code for avalaible HTML tags through UI solution .  You can use it for Free. It will be updated when more features will be developed. Full Version will have more tags avalaible ,CSS Animation and other features includind User Friendly UI.  Developed with MagicBox ,my handMade light library wich gives syntatic sugar and useful methods.You can find it in the project.
